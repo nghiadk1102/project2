@@ -10,5 +10,6 @@ class Ability
     can :read, :all
     can [:full_acc], Post, user_id: user_id
     can [:full_acc], Comment, user_id: user_id
+    can [:following, :followers], User
   end
 end
