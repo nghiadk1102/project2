@@ -7,6 +7,8 @@ en:
       home: "Home"
       help: "Help"
       login: "Login"
+      setting: "Setting"
+      logout: "log out"
     application:
       rubyonrails: "Ruby on rails"
     footer:
@@ -24,6 +26,7 @@ en:
       this_is_the_home_page: "Let's share your world with us."
       welcome: "Welcome"
       fake_book: "Fake book"
+      post_feed: "Post Feed"
   devise:
     sessions:
       new:
@@ -61,13 +64,33 @@ en:
     post_form:
       post: "Post"
       compose_new_post: "Write new post here..."
+      write_title: "Write title ..."
+    user_info:
+      post: "post"
   posts:
     create:
       post_created!: "Post created !"
     post:
       you_sure: "Are you sure ?"
+      comment: "Comment"
     destroy:
       post_deleted: "Post deleted!"
       post_deleted_fail: "Post deleted fail!"
   javascript:
-    max_file_size: "lol"
+    max_file_size: "Max file size"
+  comments:
+    form:
+      post: "Post"
+    comment:
+      post: "Post"
+  users:
+    index:
+      all_users: "All users"
+    follow:
+      follow: "Flow this user"
+    unfollow:
+      unfollow: "Unfollow this user"
+    following:
+      following: "following"
+    followers:
+      followers: "Followers"
