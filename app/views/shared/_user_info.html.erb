@@ -1,0 +1,9 @@
+
+  <%= link_to gravatar_for(current_user, size: Settings.size_gravater),
+    current_user %>
+  <h4><%= current_user.name %></h4>
+<p><span><%= link_to t(".view_my_profile"), current_user %></span></p>
+<p>
+  <span><%= t ".you_have" %></span>
+  <span><%= pluralize current_user.posts.size, t(".post") %></span>
+</p>

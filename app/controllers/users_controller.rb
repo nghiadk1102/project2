@@ -9,6 +9,8 @@ class UsersController < ApplicationController
 
   def show
     @posts = @user.posts.order_by_desc.page(params[:page]).per Settings.controller.pre_page
+    @unfollow = current_user.active_relationships.find_by(followed_id: @user.id)
+    @follow = current_user.active_relationships.build
   end
 
   private
